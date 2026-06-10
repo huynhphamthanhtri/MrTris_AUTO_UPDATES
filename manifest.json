@@ -1,13 +1,13 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "channel": "stable",
-  "published_at": "2026-06-10",
+  "published_at": "2026-06-11",
   "min_supported_version": "1.0.0",
-  "download_url": "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.1/MrTris_AUTO_1.0.1_patch.zip",
-  "sha256": "23fc7c4081284e4587b55c91bf39a1a061e979ecc9b4875140a0b45d80bfb996",
+  "download_url": "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.2/MrTris_AUTO_1.0.2_patch.zip",
+  "sha256": "e43c0efcf62fc593af96f29f26a0ce5326d46d22c4b86e83655bacd923261fda",
   "notes": [
-    "RC-1A updater system",
-    "Subtitle preview route validation",
-    "Content Engine V2A"
+    "RC-1B In-App Update Button",
+    "New API: GET /api/update/check, POST /api/update/launch",
+    "Update button in Maintenance Panel"
   ]
 }
