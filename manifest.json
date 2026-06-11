@@ -1,13 +1,18 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "channel": "stable",
   "published_at": "2026-06-11",
   "min_supported_version": "1.0.0",
-  "download_url": "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.3/MrTris_AUTO_1.0.3_patch.zip",
-  "sha256": "5c7b6f59f054025047d4947a177b91f669466c11e3992e0587ec2f3711f82d86",
+  "download_url": "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.4/MrTris_AUTO_1.0.4_patch.zip",
+  "sha256": "6fdc22bd5136c2dfa0036dc53b2b4d1c50778472061a557b558232d0eeb97440",
   "notes": [
-    "v1.0.3 hotfix: UTF-8 BOM-safe version.json read/write",
-    "Fix: updater_service.py now reads version.json with utf-8-sig",
-    "Fix: update_tool.ps1 writes version.json without UTF-8 BOM"
+    "v1.0.4 One-Click Update from UI",
+    "New: -FromUI and -RestartAfterUpdate flags for updater",
+    "New: Path-based process detection via Win32_Process",
+    "New: Graceful shutdown of MrTris_AUTO processes with 5s delay",
+    "New: Automatic app restart after update",
+    "New: Confirmation dialog in UI",
+    "Safety: Only ProjectRoot-related processes detected/stopped",
+    "Safety: No broad Get-Process fallback"
   ]
 }
