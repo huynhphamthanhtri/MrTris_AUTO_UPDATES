@@ -1,16 +1,14 @@
 {
-    "version":  "1.0.8",
+    "version":  "1.0.9",
     "published_at":  "2026-07-14",
     "channel":  "stable",
-    "sha256":  "b855a7ce7ba0c0c8f8b0e671edbb7577f59b06d0398ce5202a237e4eb9100f0c",
-    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.8/MrTris_AUTO_1.0.8_patch.zip",
+    "sha256":  "115f35074b4e59e117e4afb6c54ab468a3b292a1860c86ae39e48e97e23b3e56",
+    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.9/MrTris_AUTO_1.0.9_patch.zip",
     "min_supported_version":  "1.0.0",
     "notes":  [
-                  "v1.0.8 TTS timeline reconciliation",
-                  "Fix: Resolve TTS cue overlaps by shifting timeline before subtitle generation",
-                  "Fix: Keep subtitle and voiceover timing synchronized after TTS duration fitting",
-                  "Fix: Prevent voiceover track truncation when reconciled timeline exceeds video duration",
-                  "New: Write tts_timeline_reconciliation.json diagnostics",
-                  "Safety: Fail on unsafe per-cue or total timeline shifts"
+                  "v1.0.9 Relaxed TTS reconciliation pair cap + failure diagnostics",
+                  "Fix: Increase TTS_MAX_PAIR_AUTO_SHIFT_SECONDS from 0.75s to 2.0s",
+                  "Fix: Write tts_timeline_reconciliation_failed.json before raising",
+                  "New: Add tests for 1.346s shift, pair cap fail, and total cap fail"
               ]
 }
