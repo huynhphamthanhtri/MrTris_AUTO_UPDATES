@@ -1,15 +1,16 @@
 {
-    "version":  "1.0.7",
+    "version":  "1.0.8",
     "published_at":  "2026-07-14",
     "channel":  "stable",
-    "sha256":  "cc520606cb7272782cc4fca32cb226a6c9dfdcbc790cadb8951882d4ff20a43b",
-    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.7/MrTris_AUTO_1.0.7_patch.zip",
+    "sha256":  "b855a7ce7ba0c0c8f8b0e671edbb7577f59b06d0398ce5202a237e4eb9100f0c",
+    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.8/MrTris_AUTO_1.0.8_patch.zip",
     "min_supported_version":  "1.0.0",
     "notes":  [
-                  "v1.0.7 TTS Studio hotfix",
-                  "Fix: TTS Studio session state persists across tab switches",
-                  "Fix: TTS Studio generated filenames are readable (tts_{voice}_{text}_{timestamp}_{id})",
-                  "Fix: Preserve generating/result/error UI after returning to TTS tab",
-                  "New: Clear stale result only when user changes text, voice, locale, or format"
+                  "v1.0.8 TTS timeline reconciliation",
+                  "Fix: Resolve TTS cue overlaps by shifting timeline before subtitle generation",
+                  "Fix: Keep subtitle and voiceover timing synchronized after TTS duration fitting",
+                  "Fix: Prevent voiceover track truncation when reconciled timeline exceeds video duration",
+                  "New: Write tts_timeline_reconciliation.json diagnostics",
+                  "Safety: Fail on unsafe per-cue or total timeline shifts"
               ]
 }
