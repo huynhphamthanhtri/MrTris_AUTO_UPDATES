@@ -1,18 +1,16 @@
 {
-    "version":  "1.0.5",
+    "version":  "1.0.6",
     "published_at":  "2026-07-14",
     "channel":  "stable",
-    "sha256":  "9fabe8d3ec2d64032cd53296388980854344deb8a761ed895d52fd1742f47bb4",
-    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.5/MrTris_AUTO_1.0.5_patch.zip",
+    "sha256":  "4e6867c975a2d89ccdc491be28fff1b0e5d14202ad0223db5a3855f8aa958aaf",
+    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.6/MrTris_AUTO_1.0.6_patch.zip",
     "min_supported_version":  "1.0.0",
     "notes":  [
-                  "v1.0.5 Full Update",
-                  "New: Standalone Text to Speech (TTS Studio) tab - generate downloadable WAV/MP3",
-                  "New: Support multiple languages and voices in TTS Studio",
-                  "Fix: Reject overlapping SRT cues before voiceover rendering",
-                  "Fix: Guarded tiny-overlap SRT auto-fix (\u003c=0.5s, \u003c=10%)",
-                  "Safety: TTS voiceover overlap detection before audio mix",
-                  "Improve: Gemini layered pipeline validation and prompt block architecture",
-                  "Improve: Updated installer packaging and local update validation flow"
+                  "v1.0.6 TTS Studio UX improvements",
+                  "Fix: Download now forces Save As dialog via Content-Disposition attachment",
+                  "Fix: TTS Studio state preserved when switching tabs away and back",
+                  "New: Indeterminate progress bar with time estimate during generation",
+                  "New: Mở thư mục tạm button to open temp folder with generated file",
+                  "New: Show filename and temp folder path after successful generation"
               ]
 }
