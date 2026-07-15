@@ -1,14 +1,15 @@
 {
-    "version":  "1.0.10",
-    "published_at":  "2026-07-14",
+    "version":  "1.0.11",
+    "published_at":  "2026-07-15",
     "channel":  "stable",
-    "sha256":  "42c3260054475f57cdfc30764b97ed1c968c97acf8d51c41869cbbe151463b2c",
-    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.10/MrTris_AUTO_1.0.10_patch.zip",
+    "sha256":  "cba66a61101079ff3eced432d9e11087686163ec0b532b05b57cffcb710920ed",
+    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.11/MrTris_AUTO_1.0.11_patch.zip",
     "min_supported_version":  "1.0.0",
     "notes":  [
-                  "v1.0.10 Fix voiceover truncation / dead-air tail after timeline reconciliation",
-                  "Fix: Use duration=longest in amix so voiceover covers full tpad-extended video",
-                  "Fix: Prevent duration=first from truncating voiceover when original video audio is shorter",
-                  "New: Regression test for mix_voiceover duration=longest + tpad"
+                  "v1.0.11 Increase TTS Studio limit, add update notifications, and clean up Maintenance UI",
+                  "New: Increase TTS Studio text limit from 10000 to 30000 characters",
+                  "New: Notify users when a newer version is available and show a Maintenance tab badge",
+                  "UI: Remove Hardware ID and Runtime Health from the Maintenance panel",
+                  "UI: Vietnamese localization for License controls"
               ]
 }
