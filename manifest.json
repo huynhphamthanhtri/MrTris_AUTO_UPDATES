@@ -1,15 +1,21 @@
 {
-    "version":  "1.0.11",
-    "published_at":  "2026-07-15",
+    "version":  "1.0.13",
+    "published_at":  "2026-07-19",
     "channel":  "stable",
-    "sha256":  "cba66a61101079ff3eced432d9e11087686163ec0b532b05b57cffcb710920ed",
-    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.11/MrTris_AUTO_1.0.11_patch.zip",
+    "sha256":  "9dcf97e3549e6206ff41a65b27a790ca77b8defd4fd1e984bb4470e10d2a86c4",
+    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.13/MrTris_AUTO_1.0.13_patch.zip",
     "min_supported_version":  "1.0.0",
-    "notes":  [
-                  "v1.0.11 Increase TTS Studio limit, add update notifications, and clean up Maintenance UI",
-                  "New: Increase TTS Studio text limit from 10000 to 30000 characters",
-                  "New: Notify users when a newer version is available and show a Maintenance tab badge",
-                  "UI: Remove Hardware ID and Runtime Health from the Maintenance panel",
-                  "UI: Vietnamese localization for License controls"
-              ]
+"notes":  [
+                   "v1.0.13 reduce Gemini timeout to 180s, V3 pacing, validation repair, headless pipeline",
+                   "New: Reduce Gemini response timeout from 900s to 180s",
+                   "New: V3 DynamicPacingBlock with FAST/MEDIUM/COMPACT profiles and mathematical segment count formula",
+                   "New: Validation repair turn (max 2 attempts, same conversation) for TIMELINE_FULL_TEXT_MISMATCH, TIMELINE_DURATION_INCOMPLETE",
+                   "New: Clipboard fallback for Gemini response capture when DOM has no valid JSON",
+                   "New: FINAL ARITHMETIC GATE and FINAL TEXT GATE in prompt blocks for stricter output validation",
+                   "New: Balanced TTS/video timing (50/50 target) with video slowdown cap 0.85",
+                   "New: Internal diagnostics saved for timeout/failure debugging",
+                   "Change: Auto Pipeline always runs headless (browser checkbox removed)",
+                   "Change: End users see only generic messages for internal Gemini/validation errors",
+                   "Change: Saved Gemini auth session is preserved across updates"
+               ]
 }
