@@ -1,14 +1,20 @@
 {
-    "version":  "1.0.14",
-    "published_at":  "2026-07-22",
+    "version":  "1.0.15",
+    "published_at":  "2026-07-23",
     "channel":  "stable",
-    "sha256":  "44ad13fee11e565dcfcea5201f466df52271fc552bececdabb4fcc3a1cc2e373",
-    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.14/MrTris_AUTO_1.0.14_patch.zip",
+    "sha256":  "fd14b86d79a9108809798d78d1d33c14f57a3aa46ce47cd7ed4f596f2cca9b43",
+    "download_url":  "https://github.com/huynhphamthanhtri/MrTris_AUTO_RELEASES/releases/download/v1.0.15/MrTris_AUTO_1.0.15_patch.zip",
     "min_supported_version":  "1.0.0",
     "notes":  [
-        "v1.0.14 Remove conversation cleanup (no longer fails task) + UI select Gemini model (3.6 Flash, 3.5 Flash-Lite, 3.1 Pro)",
-        "Fix: Remove conversation delete - cleanup no longer fails task when Gemini response is valid",
-        "New: UI to select Gemini model (default 3.6 Flash, also 3.5 Flash-Lite, 3.1 Pro)",
-        "Fix: Gemini timeout reduced from 900s to 180s"
-    ]
+                  "v1.0.15 Render speed optimizations (blur_fit low-res, 30fps cut, merged encode) + batch lookahead + remove 45-min limit",
+                  "Perf: blur_fit background rendered at 540x960 then scaled up (70% faster blur pass)",
+                  "Perf: segments cut at 30fps when final output is 30fps (50% fewer frames to encode)",
+                  "Perf: title, subtitle, speed-up merged into single FFmpeg pass (saves 2-3 full H.264 encodes)",
+                  "Perf: batch mode processes next Gemini while current video renders (lookahead-1 overlap)",
+                  "Perf: source-cache copies use hard-links when filesystem allows",
+                  "Fix: render queue race condition at worker exit",
+                  "Fix: Gemini automation pipeline lock prevents concurrent Chrome profile access",
+                  "Change: removed 45-minute video duration limit",
+                  "Fix: shorter public error message for Gemini short responses"
+              ]
 }
